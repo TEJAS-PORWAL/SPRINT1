@@ -20,7 +20,7 @@ public class CollegeServiceImpl implements CollegeService{
 		dao.beginTransaction();
 		dao.addCollge(college);
 		dao.commitTransaction();
-		return null;
+		return college;
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class CollegeServiceImpl implements CollegeService{
 		dao.beginTransaction();
 		dao.updateCollege(college);
 		dao.commitTransaction();
-		return null;
+		return college;
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class CollegeServiceImpl implements CollegeService{
 		dao.beginTransaction();
 		dao.deleteCollege(college);
 		dao.commitTransaction();
-		return null;
+		return college;
 	}
 
 //	@Override
